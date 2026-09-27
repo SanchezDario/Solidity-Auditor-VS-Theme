@@ -36,14 +36,16 @@
         "configuration": "./src/language-configuration.json"
       }
     ],
+    "configurationDefaults": {
+      "[solidity]": {
+        "editor.semanticHighlighting.enabled": false
+      }
+    },
     "grammars": [
       {
         "language": "solidity",
-        "scopeName": "source.solidity.security",
-        "path": "./src/syntaxes/solidity.tmLanguage.json",
-        "injectTo": [
-          "source.solidity"
-        ]
+        "scopeName": "source.solidity",
+        "path": "./src/syntaxes/solidity.tmLanguage.json"
       }
     ],
     "themes": [

@@ -83,6 +83,12 @@
                     "include": "#natspec-tag-author"
                 },
                 {
+                    "include": "#natspec-tag-audit"
+                },
+                {
+                    "include": "#natspec-tag-@audit"
+                },
+                {
                     "include": "#natspec-tag-notice"
                 },
                 {
@@ -186,7 +192,7 @@
             ]
         },
         "operator-logic": {
-            "match": "(==|!=|!==|<(?!<)|<=|>(?!>)|>=|\\&\\&|\\|\\||\\:(?!=)|\\?)",
+            "match": "(==|!==|!=|<(?!<)|<=|>(?!>)|>=|\\&\\&|\\|\\||\\:(?!=)|\\?|!(?!=))",
             "name": "keyword.operator.logic.solidity"
         },
         "operator-mapping": {
@@ -686,10 +692,10 @@
             ]
         },
         "comment-todo": {
-			"match": "(?i)\\b(FIXME|TODO|CHANGED|AUDIT|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP|\\w+-disable|\\w+-suppress)\\b(?-i)",
+			"match": "(?i)\\b(FIXME|FIX|TODO|CHANGED|XXX|AUDIT|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP|SUPPRESS|LINT|\\w+-disable|\\w+-suppress)\\b(?-i)",
 			"name": "keyword.comment.todo.solidity"
 		}
     },
-    "scopeName": "source.solidity.security",
+    "scopeName": "source.solidity",
     "uuid": "ad87d2cd-8575-4afe-984e-9421a3788933"
 }

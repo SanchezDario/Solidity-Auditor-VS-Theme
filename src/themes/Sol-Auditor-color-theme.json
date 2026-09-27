@@ -1,6 +1,8 @@
 {
 	"name": "Sol-Auditor",
 	"colors": {
+		"editor.background": "#101219",
+		"editor.foreground": "#dfe1e1",
 		"editor.background": "#12141c",
 		"editor.foreground": "#dbdbdb",
 		"sideBarTitle.foreground": "#b6b5b5",
@@ -52,8 +54,9 @@
 		"tab.inactiveBackground": "#22252b",
 		"titleBar.activeBackground": "#101318",
 		"titleBar.activeForeground": "#9da5b4",
-		"titleBar.inactiveBackground": "#3b485c",
+		"titleBar.inactiveBackground": "#101318",
 		"titleBar.inactiveForeground": "#9DA5B4",
+		"statusBar.inactiveBackground": "#131313",
 		"statusBar.debuggingForeground": "#FFFFFF",
 		"extensionButton.prominentBackground": "#2BA143",
 		"extensionButton.prominentHoverBackground": "#37AF4E",
@@ -261,7 +264,7 @@
 			"name": "modifier function",				///// MODIFIERS		/x
 			"scope": "entity.name.modifier.solidity",
 			"settings": {
-				"foreground": "#c1c5c5",
+				"foreground": "#dfe1e1",
 				//"fontStyle":"bold"
 			}
 		},
@@ -302,6 +305,7 @@
 			"name": "todos and dev notes",				///// audit, hack, bug, todo
 			"scope": "keyword.comment.todo.solidity",
 			"settings": {
+				"foreground": "#a52d25",
 				"foreground": "#cb1212",
 				//"fontStyle": "bold underline italic"
 			}
@@ -316,7 +320,7 @@
 		},
 		{
 			"name": "audit notes 2",
-			"scope": "keyword.comment.audit.solidity",
+			"scope": "keyword.comment.todo.solidity",
 			"settings": {
 				"foreground": "#c02a16",
 			}
@@ -469,7 +473,7 @@
 			"name": "enum",
 			"scope": "entity.name.type.enum.solidity",
 			"settings": {
-				"foreground":"#c1c5c5",
+				"foreground":"#dfe1e1",
 				//"fontStyle": "bold"
 			}
 		},
